@@ -24,11 +24,13 @@ export default function Services() {
             }`}
           >
             <Link href={service.link}>
-              <h2 className="text-3xl pb-4 text-[#7115bc] font-bold">
+              <h2 className="text-3xl pb-4 text-purple-800 font-bold">
                 {service.title}
               </h2>
               <p className="pb-4">{service.description}</p>
-              <Button link={service.link} name="Learn More" />
+              <div className="grid place-items-center">
+                <Button link={service.link} name="Learn More" />
+              </div>
             </Link>
           </div>
         );
