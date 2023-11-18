@@ -20,7 +20,7 @@ export default function Accordion(props: AccordionProps) {
   };
 
   return (
-    <div className="py-24">
+    <div className="py-24 overflow-hidden max-w-[1450px]">
       <h2 className="text-3xl font-bold px-12">FAQ</h2>
       {props.useData.map((data, index) => {
         return (
