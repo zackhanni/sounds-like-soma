@@ -19,7 +19,7 @@ export default function Services() {
           <div
             key={service.title}
             ref={ref}
-            className={`card bg-[#1c1c1c] flex flex-row flex-wrap rounded-lg shadow-2xl p-4 max-w-[600px] min-w-[300px] ${
+            className={`hover:-translate-y-1 bg-[#1c1c1c] flex flex-row flex-wrap rounded-lg shadow-2xl p-4 max-w-[600px] min-w-[300px] ${
               inView ? "show" : "hide"
             }`}
           >
