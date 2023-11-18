@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.ReactCollapse--collapse {
+  transition: height 200ms;
+}
+
+/* show and hide for post items / intersection observer */
+.show {
+  transform: translateX(0);
+  opacity: 1;
+  transition: 300ms;
+}
+
+.hide {
+  transform: translateX(100px);
+  opacity: 0;
+  transition: 300ms;
+}
