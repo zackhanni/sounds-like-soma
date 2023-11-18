@@ -5,7 +5,7 @@ import FooterData from "./FooterData";
 
 export default function Footer() {
   return (
-    <footer className=" bg-[#7115bc] flex justify-center w-full">
+    <footer className="flex justify-center w-full bg-purple-800">
       <div className="py-8">
         <div className="">
           <Link href={"/"}>
