@@ -22,9 +22,9 @@ export const AccordionItem: React.FC<AccordionProps> = ({
   });
 
   return (
-    <div ref={ref} className={`py-6 ${inView ? "show" : "hide"}`}>
+    <div ref={ref} className={`py-4 ${inView ? "show" : "hide"}`}>
       <div
-        className="py-1 px-12 flex justify-between items-center cursor-pointer text-white"
+        className="py-1 px-12 flex justify-between items-center cursor-pointer"
         onClick={toggle}
       >
         <p className="text-2xl sm:text-4xl font-semibold">{title}</p>
@@ -32,10 +32,10 @@ export const AccordionItem: React.FC<AccordionProps> = ({
           {open ? <AiOutlineMinus /> : <AiOutlinePlus />}
         </div>
       </div>
-      <hr className="mx-12" />
+      <hr className="mx-12 mb-4" />
       <Collapse isOpened={open}>
-        <div className="px-12 text-white">
-          <div className="my-4">{description}</div>
+        <div className="px-12">
+          <div className="">{description}</div>
         </div>
       </Collapse>
     </div>
