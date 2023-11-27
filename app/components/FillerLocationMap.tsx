@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function FillerLocationMap() {
   return (
-    <div className="flex items-center justify-center py-32">
+    <div className="flex flex-col sm:flex-row items-center justify-center py-32 max-w-[90%] sm:max-w-[75%] 2xl:max-w-[50%]">
       <div className="sm:max-w-[50%]">
         <h2 className="text-2xl font-bold">Music Studios in Philadelphia</h2>
         <p>
@@ -26,6 +26,7 @@ export default function FillerLocationMap() {
           width={350}
           height={275}
           alt="Find Soma on Google Maps"
+          className="m-4"
         />
       </Link>
     </div>
