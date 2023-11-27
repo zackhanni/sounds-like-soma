@@ -3,9 +3,9 @@ import CallBox from "./CallBox";
 
 export default function Hero() {
   return (
-    <div className="flex">
-      <div>
-        <h1 className="text-4xl font-bold">
+    <div className="flex lg:flex-row flex-col-reverse lg:pt-24">
+      <div className="px-4 sm:px-16 py-8">
+        <h1 className="text-3xl font-bold">
           Music Recording Studios In Philadelphia
         </h1>
         <p className="text-2xl py-8">
@@ -14,12 +14,13 @@ export default function Hero() {
         </p>
         <CallBox />
       </div>
-      <div>
+      <div className="flex items-center justify-center">
         <Image
           src="/music-studios-philadelphia.webp"
           width={850}
           height={633}
           alt="Philadelphia's Best Recording Studios"
+          className="rounded-lg"
         />
       </div>
     </div>
