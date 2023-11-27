@@ -8,7 +8,7 @@ import Button from "./Button";
 
 export default function Services() {
   return (
-    <div className="flex flex-wrap items-center justify-center gap-10 py-32 overflow-hidden max-w-[1450px]">
+    <div className="flex flex-wrap items-center justify-center gap-10 py-32 overflow-hidden 2xl:max-w-[68%]">
       {ServicesData.map((service) => {
         // eslint-disable-next-line react-hooks/rules-of-hooks
         const { ref, inView } = useInView({
@@ -19,7 +19,7 @@ export default function Services() {
           <div
             key={service.title}
             ref={ref}
-            className={`hover:-translate-y-1 bg-[#1c1c1c] flex flex-row flex-wrap rounded-lg shadow-2xl p-4 max-w-[600px] min-w-[300px] ${
+            className={`hover:-translate-y-1 bg-[#1c1c1c] flex flex-row flex-wrap rounded-lg shadow-2xl p-4 max-w-[400px] min-w-[300px] ${
               inView ? "show" : "hide"
             }`}
           >
