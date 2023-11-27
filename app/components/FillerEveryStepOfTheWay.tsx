@@ -26,7 +26,7 @@ export default function FillerEveryStepOfTheWay() {
       <h3 className="text-2xl text-center">
         We Help You Every Step Of The Way
       </h3>
-      <div className="flex flex-col sm:flex-row items-center justify-center gap-5 py-4">
+      <div className="flex flex-wrap items-center justify-center gap-5 py-4">
         {imageData.map((image) => {
           return (
             <div
@@ -50,7 +50,7 @@ export default function FillerEveryStepOfTheWay() {
           );
         })}
       </div>
-      <div className="flex flex-col sm:flex-row items-center justify-center">
+      <div className="flex flex-col sm:flex-row items-center justify-center max-w-[90%]">
         <div className="p-4">
           <h3 className="text-2xl">Get The True Soma Sound</h3>
           <p className="max-w-xl">
