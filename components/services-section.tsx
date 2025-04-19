@@ -99,7 +99,7 @@ export default function ServicesSection() {
             "Comping and tuning services available",
           ],
           icon: <Music className="h-6 w-6 text-purple-400" />,
-          href: "/services/recording/vocal",
+          href: "/services/recording#vocal",
         },
         {
           id: "band-recording",
@@ -654,7 +654,7 @@ export default function ServicesSection() {
               {mainCategories.map((category) => (
                 <Card
                   key={category.id}
-                  className="bg-[#3A3A3A] border-gray-700 hover:border-purple-500 transition-all duration-300 cursor-pointer"
+                  className="bg-[#3A3A3A] text-[#FFFFF0] border-gray-700 hover:border-purple-500 transition-all duration-300 cursor-pointer"
                   onClick={() => setSelectedCategory(category.id)}
                 >
                   <CardHeader>
@@ -797,7 +797,7 @@ export default function ServicesSection() {
                 ?.subcategories.map((subcategory) => (
                   <Card
                     key={subcategory.id}
-                    className="bg-[#3A3A3A] border-gray-700 hover:border-purple-500 transition-all duration-300"
+                    className="bg-[#3A3A3A] text-[#FFFFF0] border-gray-700 hover:border-purple-500 transition-all duration-300"
                   >
                     <CardHeader>
                       <div className="flex items-center gap-3">
