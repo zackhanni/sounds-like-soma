@@ -1,11 +1,11 @@
-import { Globe, Share2, Palette } from "lucide-react"
-import ServiceCategoryLayout from "@/components/service-category-layout"
+import { Globe, Share2, Palette } from "lucide-react";
+import ServiceCategoryLayout from "@/components/service-category-layout";
 
 export const metadata = {
   title: "Artist Promotion Services | Sounds Like Soma | Philadelphia",
   description:
     "Professional artist promotion services including website design, EPK creation, social media content, and branding consultation for musicians and creators in Philadelphia.",
-}
+};
 
 export default function PromotionPage() {
   const services = [
@@ -26,11 +26,12 @@ export default function PromotionPage() {
     {
       id: "branding",
       title: "Branding Consultation",
-      description: "Professional branding consultation for artists and musicians",
+      description:
+        "Professional branding consultation for artists and musicians",
       icon: <Palette className="h-6 w-6 text-purple-400" />,
       href: "/services/promotion/branding",
     },
-  ]
+  ];
 
   const faqs = [
     {
@@ -39,7 +40,8 @@ export default function PromotionPage() {
         "Our standard EPKs include professional biography, high-resolution photos, music samples, videos, press quotes/reviews, contact information, and social media links. We can customize the content based on your specific needs and career stage. EPKs are delivered in both digital format (website or PDF) and print-ready versions.",
     },
     {
-      question: "Do you build websites on specific platforms like WordPress or Squarespace?",
+      question:
+        "Do you build websites on specific platforms like WordPress or Squarespace?",
       answer:
         "Yes, we build artist websites on various platforms including WordPress, Squarespace, Wix, and Bandzoogle. We recommend platforms based on your specific needs, technical comfort level, and budget. All our websites are mobile-responsive, SEO-optimized, and designed for easy updating.",
     },
@@ -68,7 +70,7 @@ export default function PromotionPage() {
       answer:
         "While we don't directly handle distribution, we can advise on distribution platforms and strategies. For playlist placement, we offer consultation on playlist pitching strategies and can help prepare your submissions. We also have partnerships with playlist curators and promotion services that we can connect you with.",
     },
-  ]
+  ];
 
   const keywords = [
     "artist website design Philadelphia",
@@ -83,7 +85,7 @@ export default function PromotionPage() {
     "artist brand development",
     "music promotion strategy",
     "professional musician websites",
-  ]
+  ];
 
   return (
     <ServiceCategoryLayout
@@ -97,43 +99,50 @@ export default function PromotionPage() {
       keywords={keywords}
     >
       <p className="mb-4">
-        At Sounds Like Soma, we understand that creating great music is only part of a successful career. Our
-        Philadelphia-based artist promotion services help you build a professional presence and connect with your
+        At Sounds Like Soma, we understand that creating great music is only
+        part of a successful career. Our Philadelphia-based artist promotion
+        services help you build a professional presence and connect with your
         audience:
       </p>
 
       <ul className="list-disc pl-6 mb-6 space-y-2">
         <li>
-          <strong>Website Design & EPK Creation:</strong> Professional online presence with custom websites and
-          electronic press kits that showcase your music and brand
+          <strong>Website Design & EPK Creation:</strong> Professional online
+          presence with custom websites and electronic press kits that showcase
+          your music and brand
         </li>
         <li>
-          <strong>Social Media Content:</strong> Engaging photos, graphics, videos, and animations designed specifically
-          for music promotion across platforms
+          <strong>Social Media Content:</strong> Engaging photos, graphics,
+          videos, and animations designed specifically for music promotion
+          across platforms
         </li>
         <li>
-          <strong>Branding Consultation:</strong> Comprehensive brand development including visual identity, messaging,
-          and positioning strategy
+          <strong>Branding Consultation:</strong> Comprehensive brand
+          development including visual identity, messaging, and positioning
+          strategy
         </li>
       </ul>
 
       <p className="mb-4">
-        Our approach combines industry expertise with digital marketing best practices to create promotion strategies
-        that work for musicians at all career stages. We focus on building sustainable, authentic connections with fans
-        while presenting a professional image to industry gatekeepers.
+        Our approach combines industry expertise with digital marketing best
+        practices to create promotion strategies that work for musicians at all
+        career stages. We focus on building sustainable, authentic connections
+        with fans while presenting a professional image to industry gatekeepers.
       </p>
 
       <p className="mb-4">
-        Unlike generic marketing agencies, we specialize in music promotion and understand the unique challenges and
-        opportunities in the industry. Our team includes music industry veterans who have worked with independent
+        Unlike generic marketing agencies, we specialize in music promotion and
+        understand the unique challenges and opportunities in the industry. Our
+        team includes music industry veterans who have worked with independent
         artists, major labels, and everything in between.
       </p>
 
       <p>
-        Whether you're releasing your first single or promoting your tenth album, our promotion services can help you
-        cut through the noise and reach the audience your music deserves. We offer both one-time project services and
-        ongoing promotion packages to suit your needs and budget.
+        Whether you&apos;re releasing your first single or promoting your tenth
+        album, our promotion services can help you cut through the noise and
+        reach the audience your music deserves. We offer both one-time project
+        services and ongoing promotion packages to suit your needs and budget.
       </p>
     </ServiceCategoryLayout>
-  )
+  );
 }

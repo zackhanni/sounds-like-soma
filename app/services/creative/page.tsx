@@ -1,11 +1,11 @@
-import { Video, FileAudio, Music, PenTool } from "lucide-react"
-import ServiceCategoryLayout from "@/components/service-category-layout"
+import { Video, FileAudio, Music, PenTool } from "lucide-react";
+import ServiceCategoryLayout from "@/components/service-category-layout";
 
 export const metadata = {
   title: "Creative Services | Sounds Like Soma | Philadelphia",
   description:
     "Professional creative services including 4K video production, beatmaking, instrumental recreation, and songwriting for artists and brands in Philadelphia.",
-}
+};
 
 export default function CreativePage() {
   const services = [
@@ -37,7 +37,7 @@ export default function CreativePage() {
       icon: <PenTool className="h-6 w-6 text-purple-400" />,
       href: "/services/creative/songwriting",
     },
-  ]
+  ];
 
   const faqs = [
     {
@@ -56,7 +56,8 @@ export default function CreativePage() {
         "We offer both exclusive and non-exclusive (leased) beats. Exclusive beats are sold only once and all rights transfer to you, while non-exclusive beats may be leased to multiple artists. Exclusive beats are priced higher but provide you with complete ownership and prevent other artists from using the same instrumental.",
     },
     {
-      question: "Can you recreate a specific song or instrumental for my project?",
+      question:
+        "Can you recreate a specific song or instrumental for my project?",
       answer:
         "Yes, our instrumental recreation services can reproduce existing songs for cover versions, backing tracks, or reference purposes. We can create versions that closely match the original or customize them to your preferences. Note that using recreated instrumentals still requires proper licensing for commercial release.",
     },
@@ -75,7 +76,7 @@ export default function CreativePage() {
       answer:
         "A basic custom beat typically takes 1-3 days to create, while more complex productions may take 3-7 days. The timeline depends on the complexity, revisions needed, and our current workload. Rush services are available for time-sensitive projects at an additional fee.",
     },
-  ]
+  ];
 
   const keywords = [
     "music video production Philadelphia",
@@ -90,7 +91,7 @@ export default function CreativePage() {
     "music producer Philadelphia",
     "custom music production",
     "artist development services",
-  ]
+  ];
 
   return (
     <ServiceCategoryLayout
@@ -104,41 +105,47 @@ export default function CreativePage() {
       keywords={keywords}
     >
       <p className="mb-4">
-        At Sounds Like Soma, we believe that great music deserves great visuals and supporting content. Our
-        Philadelphia-based creative services help artists and brands develop compelling content that enhances their
-        music and builds their audience:
+        At Sounds Like Soma, we believe that great music deserves great visuals
+        and supporting content. Our Philadelphia-based creative services help
+        artists and brands develop compelling content that enhances their music
+        and builds their audience:
       </p>
 
       <ul className="list-disc pl-6 mb-6 space-y-2">
         <li>
-          <strong>4K Video Production:</strong> Professional music videos, performance videos, and promotional content
-          with cinema-quality cameras and creative direction
+          <strong>4K Video Production:</strong> Professional music videos,
+          performance videos, and promotional content with cinema-quality
+          cameras and creative direction
         </li>
         <li>
-          <strong>Beatmaking:</strong> Custom instrumental production across all genres, from hip-hop and R&B to pop and
-          electronic music
+          <strong>Beatmaking:</strong> Custom instrumental production across all
+          genres, from hip-hop and R&B to pop and electronic music
         </li>
         <li>
-          <strong>Instrumental Recreation:</strong> Accurate reproduction of existing songs for covers, backing tracks,
-          or reference purposes
+          <strong>Instrumental Recreation:</strong> Accurate reproduction of
+          existing songs for covers, backing tracks, or reference purposes
         </li>
         <li>
-          <strong>Songwriting/Toplining:</strong> Professional melody and lyric creation to help complete your musical
-          vision
+          <strong>Songwriting/Toplining:</strong> Professional melody and lyric
+          creation to help complete your musical vision
         </li>
       </ul>
 
       <p className="mb-4">
-        Our creative team includes experienced videographers, producers, musicians, and songwriters who understand how
-        to translate your artistic vision into compelling content. We work collaboratively with you throughout the
-        process, ensuring the final product aligns with your brand and resonates with your audience.
+        Our creative team includes experienced videographers, producers,
+        musicians, and songwriters who understand how to translate your artistic
+        vision into compelling content. We work collaboratively with you
+        throughout the process, ensuring the final product aligns with your
+        brand and resonates with your audience.
       </p>
 
       <p>
-        Whether you're an emerging artist looking to create your first music video, an established musician seeking
-        fresh beats, or a brand needing custom music and visuals, our creative services provide the professional quality
-        and artistic sensibility to help you stand out in today's competitive landscape.
+        Whether you&apos;re an emerging artist looking to create your first
+        music video, an established musician seeking fresh beats, or a brand
+        needing custom music and visuals, our creative services provide the
+        professional quality and artistic sensibility to help you stand out in
+        today&apos;s competitive landscape.
       </p>
     </ServiceCategoryLayout>
-  )
+  );
 }

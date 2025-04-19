@@ -1,25 +1,27 @@
-import { Sliders, Radio, Wand2, FileAudio } from "lucide-react"
-import ServiceCategoryLayout from "@/components/service-category-layout"
+import { Sliders, Radio, Wand2, FileAudio } from "lucide-react";
+import ServiceCategoryLayout from "@/components/service-category-layout";
 
 export const metadata = {
   title: "Editing & Production Services | Sounds Like Soma | Philadelphia",
   description:
     "Professional audio editing, mixing, mastering, and production services in Philadelphia. Transform your recordings into polished, professional tracks ready for release.",
-}
+};
 
 export default function EditingPage() {
   const services = [
     {
       id: "mixing",
       title: "Mixing",
-      description: "Professional audio mixing to balance and enhance your tracks",
+      description:
+        "Professional audio mixing to balance and enhance your tracks",
       icon: <Sliders className="h-6 w-6 text-purple-400" />,
       href: "/services/editing/mixing",
     },
     {
       id: "mastering",
       title: "Mastering",
-      description: "Final polish and preparation of your audio for distribution",
+      description:
+        "Final polish and preparation of your audio for distribution",
       icon: <Sliders className="h-6 w-6 text-purple-400" />,
       href: "/services/editing/mastering",
     },
@@ -44,7 +46,7 @@ export default function EditingPage() {
       icon: <FileAudio className="h-6 w-6 text-purple-400" />,
       href: "/services/editing/beatmaking",
     },
-  ]
+  ];
 
   const faqs = [
     {
@@ -82,7 +84,7 @@ export default function EditingPage() {
       answer:
         "For best results, provide clearly labeled, organized tracks with any editing completed (comping vocals, fixing timing issues, etc.). Include reference tracks, notes about your vision for the mix, and any rough mixes you've created. We'll provide detailed instructions when you book your project.",
     },
-  ]
+  ];
 
   const keywords = [
     "audio mixing Philadelphia",
@@ -97,7 +99,7 @@ export default function EditingPage() {
     "audio post-production",
     "stem mastering",
     "vocal tuning services",
-  ]
+  ];
 
   return (
     <ServiceCategoryLayout
@@ -111,43 +113,49 @@ export default function EditingPage() {
       keywords={keywords}
     >
       <p className="mb-4">
-        At Sounds Like Soma, we combine technical expertise with artistic sensibility to enhance your audio while
-        staying true to your vision. Our Philadelphia-based editing and production services include:
+        At Sounds Like Soma, we combine technical expertise with artistic
+        sensibility to enhance your audio while staying true to your vision. Our
+        Philadelphia-based editing and production services include:
       </p>
 
       <ul className="list-disc pl-6 mb-6 space-y-2">
         <li>
-          <strong>Professional Mixing:</strong> Balancing levels, enhancing tones, creating depth and dimension with
-          premium analog and digital tools
+          <strong>Professional Mixing:</strong> Balancing levels, enhancing
+          tones, creating depth and dimension with premium analog and digital
+          tools
         </li>
         <li>
-          <strong>Mastering:</strong> The final polish that makes your music sound competitive and translates well
-          across all playback systems
+          <strong>Mastering:</strong> The final polish that makes your music
+          sound competitive and translates well across all playback systems
         </li>
         <li>
-          <strong>Podcast Editing:</strong> Cleaning up recordings, removing mistakes, balancing levels, and adding
-          music and effects
+          <strong>Podcast Editing:</strong> Cleaning up recordings, removing
+          mistakes, balancing levels, and adding music and effects
         </li>
         <li>
-          <strong>Audio Restoration:</strong> Removing noise, clicks, pops, and other issues from recordings of any age
-          or source
+          <strong>Audio Restoration:</strong> Removing noise, clicks, pops, and
+          other issues from recordings of any age or source
         </li>
         <li>
-          <strong>Beat Production:</strong> Creating custom instrumentals tailored to your artistic vision across all
-          genres
+          <strong>Beat Production:</strong> Creating custom instrumentals
+          tailored to your artistic vision across all genres
         </li>
       </ul>
 
       <p className="mb-4">
-        Our engineers have worked across countless genres and project types, from indie releases to major label
-        productions, commercial podcasts to audiobooks. We understand the technical requirements for different
-        distribution platforms and ensure your audio meets industry standards while standing out from the crowd.
+        Our engineers have worked across countless genres and project types,
+        from indie releases to major label productions, commercial podcasts to
+        audiobooks. We understand the technical requirements for different
+        distribution platforms and ensure your audio meets industry standards
+        while standing out from the crowd.
       </p>
 
       <p>
-        Whether you're finishing a single track or a complete album, launching a podcast series, or restoring archival
-        recordings, our editing and production services provide the professional polish that makes your audio shine.
+        Whether you&apos;re finishing a single track or a complete album,
+        launching a podcast series, or restoring archival recordings, our
+        editing and production services provide the professional polish that
+        makes your audio shine.
       </p>
     </ServiceCategoryLayout>
-  )
+  );
 }

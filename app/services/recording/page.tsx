@@ -1,11 +1,12 @@
-import { Music, Radio, Headphones, BookOpen } from "lucide-react"
-import ServiceCategoryLayout from "@/components/service-category-layout"
+import { Music, Radio, Headphones, BookOpen } from "lucide-react";
+import ServiceCategoryLayout from "@/components/service-category-layout";
 
 export const metadata = {
-  title: "Recording Services | Sounds Like Soma | Philadelphia Recording Studio",
+  title:
+    "Recording Services | Sounds Like Soma | Philadelphia Recording Studio",
   description:
     "Professional recording services for vocals, bands, podcasts, voice overs, and audiobooks in Philadelphia. State-of-the-art equipment and experienced engineers.",
-}
+};
 
 export default function RecordingPage() {
   const services = [
@@ -44,7 +45,7 @@ export default function RecordingPage() {
       icon: <BookOpen className="h-6 w-6 text-purple-400" />,
       href: "/services/recording/audiobook",
     },
-  ]
+  ];
 
   const faqs = [
     {
@@ -82,7 +83,7 @@ export default function RecordingPage() {
       answer:
         "We require 48 hours notice for cancellations to receive a full refund of your deposit. Cancellations with less than 48 hours notice may forfeit the deposit, though we try to be flexible when possible and can often reschedule instead.",
     },
-  ]
+  ];
 
   const keywords = [
     "Philadelphia recording studio",
@@ -97,7 +98,7 @@ export default function RecordingPage() {
     "professional microphones",
     "recording studio near me",
     "best recording studio Philadelphia",
-  ]
+  ];
 
   return (
     <ServiceCategoryLayout
@@ -111,43 +112,48 @@ export default function RecordingPage() {
       keywords={keywords}
     >
       <p className="mb-4">
-        At Sounds Like Soma, we understand that great recording starts with the right environment, equipment, and
-        expertise. Our Philadelphia recording studios feature:
+        At Sounds Like Soma, we understand that great recording starts with the
+        right environment, equipment, and expertise. Our Philadelphia recording
+        studios feature:
       </p>
 
       <ul className="list-disc pl-6 mb-6 space-y-2">
         <li>
-          <strong>Premium Microphones and Preamps:</strong> Including Neumann, AKG, Shure, Sony, and more to capture
-          every nuance of your performance
+          <strong>Premium Microphones and Preamps:</strong> Including Neumann,
+          AKG, Shure, Sony, and more to capture every nuance of your performance
         </li>
         <li>
-          <strong>Acoustically-Designed Spaces:</strong> Multiple room options with ideal acoustic properties for
-          different recording needs
+          <strong>Acoustically-Designed Spaces:</strong> Multiple room options
+          with ideal acoustic properties for different recording needs
         </li>
         <li>
-          <strong>Experienced Engineers:</strong> Our team brings years of experience across all genres and recording
-          types
+          <strong>Experienced Engineers:</strong> Our team brings years of
+          experience across all genres and recording types
         </li>
         <li>
-          <strong>Comfortable Environment:</strong> Designed to inspire creativity and optimal performance
+          <strong>Comfortable Environment:</strong> Designed to inspire
+          creativity and optimal performance
         </li>
         <li>
-          <strong>High-Resolution Recording:</strong> State-of-the-art digital and analog recording chains for
-          exceptional sound quality
+          <strong>High-Resolution Recording:</strong> State-of-the-art digital
+          and analog recording chains for exceptional sound quality
         </li>
       </ul>
 
       <p className="mb-4">
-        Whether you're recording vocals for your next hit single, capturing your band's live energy, producing a
-        podcast, or recording voice overs for commercial work, our Philadelphia recording studios provide the perfect
-        environment to achieve professional results.
+        Whether you&apos;re recording vocals for your next hit single, capturing
+        your band&apos;s live energy, producing a podcast, or recording voice
+        overs for commercial work, our Philadelphia recording studios provide
+        the perfect environment to achieve professional results.
       </p>
 
       <p>
-        We work with clients at all levels, from first-time recording artists to major label professionals, providing
-        the same attention to detail and quality for every project. Our goal is to make the recording process smooth and
-        enjoyable while delivering results that exceed your expectations.
+        We work with clients at all levels, from first-time recording artists to
+        major label professionals, providing the same attention to detail and
+        quality for every project. Our goal is to make the recording process
+        smooth and enjoyable while delivering results that exceed your
+        expectations.
       </p>
     </ServiceCategoryLayout>
-  )
+  );
 }
