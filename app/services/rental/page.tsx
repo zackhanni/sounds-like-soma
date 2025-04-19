@@ -1,18 +1,19 @@
-import { Home, Users, Radio } from "lucide-react"
-import ServiceCategoryLayout from "@/components/service-category-layout"
+import { Home, Users, Radio } from "lucide-react";
+import ServiceCategoryLayout from "@/components/service-category-layout";
 
 export const metadata = {
   title: "Studio Space Rental | Sounds Like Soma | Philadelphia",
   description:
     "Professional studio space rental in Philadelphia for recording, rehearsals, and podcasting. Hourly and daily rates with premium equipment included.",
-}
+};
 
 export default function RentalPage() {
   const services = [
     {
       id: "studio-rental",
       title: "Rentable Music Studio",
-      description: "Professional recording studio space available for hourly rental",
+      description:
+        "Professional recording studio space available for hourly rental",
       icon: <Home className="h-6 w-6 text-purple-400" />,
       href: "/services/rental/studio",
     },
@@ -30,7 +31,7 @@ export default function RentalPage() {
       icon: <Radio className="h-6 w-6 text-purple-400" />,
       href: "/services/rental/podcast",
     },
-  ]
+  ];
 
   const faqs = [
     {
@@ -68,7 +69,7 @@ export default function RentalPage() {
       answer:
         "We require 48 hours notice for cancellations to receive a full refund. Cancellations with 24-48 hours notice receive a 50% refund or can reschedule with a small fee. Cancellations with less than 24 hours notice are charged in full, though we try to be flexible when possible for emergencies or if we can fill the slot.",
     },
-  ]
+  ];
 
   const keywords = [
     "recording studio rental Philadelphia",
@@ -83,7 +84,7 @@ export default function RentalPage() {
     "podcast recording booth",
     "audio recording space",
     "music studio near me",
-  ]
+  ];
 
   return (
     <ServiceCategoryLayout
@@ -97,22 +98,26 @@ export default function RentalPage() {
       keywords={keywords}
     >
       <p className="mb-4">
-        At Sounds Like Soma, we provide access to professional creative spaces without the high cost of ownership. Our
-        Philadelphia studio rental options include:
+        At Sounds Like Soma, we provide access to professional creative spaces
+        without the high cost of ownership. Our Philadelphia studio rental
+        options include:
       </p>
 
       <ul className="list-disc pl-6 mb-6 space-y-2">
         <li>
-          <strong>Recording Studios:</strong> Professional recording environments with premium equipment and acoustic
-          treatment, available with or without an engineer
+          <strong>Recording Studios:</strong> Professional recording
+          environments with premium equipment and acoustic treatment, available
+          with or without an engineer
         </li>
         <li>
-          <strong>Rehearsal Spaces:</strong> Soundproofed rooms with PA systems and optional backline equipment for
-          bands and musicians to practice and prepare
+          <strong>Rehearsal Spaces:</strong> Soundproofed rooms with PA systems
+          and optional backline equipment for bands and musicians to practice
+          and prepare
         </li>
         <li>
-          <strong>Podcast Studios:</strong> Purpose-built podcast recording spaces with broadcast-quality equipment and
-          comfortable seating for hosts and guests
+          <strong>Podcast Studios:</strong> Purpose-built podcast recording
+          spaces with broadcast-quality equipment and comfortable seating for
+          hosts and guests
         </li>
       </ul>
 
@@ -128,11 +133,13 @@ export default function RentalPage() {
       </ul>
 
       <p>
-        Whether you're an independent artist recording your next release, a band preparing for tour, or a podcaster
-        creating content, our rental spaces provide the professional environment you need without the long-term
-        commitment. We also offer package deals that combine space rental with our other services like mixing,
-        mastering, or video production.
+        Whether you&apos;re an independent artist recording your next release, a
+        band preparing for tour, or a podcaster creating content, our rental
+        spaces provide the professional environment you need without the
+        long-term commitment. We also offer package deals that combine space
+        rental with our other services like mixing, mastering, or video
+        production.
       </p>
     </ServiceCategoryLayout>
-  )
+  );
 }
