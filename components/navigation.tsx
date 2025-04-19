@@ -1,31 +1,31 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import Link from "next/link"
-import { Menu, X } from "lucide-react"
-import { cn } from "@/lib/utils"
-import { Button } from "@/components/ui/button"
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import { Menu, X } from "lucide-react";
+import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
 
 export default function Navigation() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [isMobile, setIsMobile] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const checkScreenSize = () => {
-      setIsMobile(window.innerWidth < 768)
-    }
+      setIsMobile(window.innerWidth < 768);
+    };
 
-    checkScreenSize()
-    window.addEventListener("resize", checkScreenSize)
+    checkScreenSize();
+    window.addEventListener("resize", checkScreenSize);
 
     return () => {
-      window.removeEventListener("resize", checkScreenSize)
-    }
-  }, [])
+      window.removeEventListener("resize", checkScreenSize);
+    };
+  }, []);
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen)
-  }
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   const navItems = [
     { name: "Home", href: "/" },
@@ -34,7 +34,7 @@ export default function Navigation() {
     { name: "Blog", href: "/blog" },
     { name: "Reviews", href: "/reviews" },
     { name: "Contact", href: "/contact" },
-  ]
+  ];
 
   return (
     <nav className="sticky top-0 z-50 bg-[#2E2E2E] border-b border-gray-800">
@@ -51,9 +51,9 @@ export default function Navigation() {
               </Link>
             ) : (
               <Link href="/" className="block">
-                <h1 className="text-2xl md:text-3xl font-bold text-[#FFFFF0] font-['Audiowide',_sans-serif]">
-                  Sounds Like Soma
-                </h1>
+                <p className="text-2xl md:text-3xl font-bold text-[#FFFFF0] font-['Audiowide',_sans-serif]">
+                  Soma
+                </p>
               </Link>
             )}
           </div>
@@ -72,7 +72,7 @@ export default function Navigation() {
             </div>
           </div>
 
-          <div className="md:hidden">
+          <div className="md:hidden z-50">
             <Button
               variant="ghost"
               size="icon"
@@ -80,7 +80,11 @@ export default function Navigation() {
               aria-label="Toggle menu"
               className="text-[#FFFFF0]"
             >
-              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              {isMenuOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-6 w-6" />
+              )}
             </Button>
           </div>
         </div>
@@ -90,7 +94,7 @@ export default function Navigation() {
       <div
         className={cn(
           "md:hidden fixed inset-0 bg-[#2E2E2E] z-40 transition-transform duration-300 ease-in-out transform",
-          isMenuOpen ? "translate-x-0" : "translate-x-full",
+          isMenuOpen ? "translate-x-0" : "translate-x-full"
         )}
       >
         <div className="pt-20 pb-6 px-4 space-y-6">
@@ -107,5 +111,5 @@ export default function Navigation() {
         </div>
       </div>
     </nav>
-  )
+  );
 }
