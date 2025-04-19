@@ -17,12 +17,14 @@ Recording vocals is both an art and a science. As the most personal and expressi
 Before you even set up a microphone, you need to prepare your recording space. Here are some essential considerations:
 
 ### Room Acoustics
+
 - **Treat your room**: Use acoustic panels, bass traps, and diffusers to minimize reflections
 - **Find the sweet spot**: Test different positions in your room to find where vocals sound best
 - **Control external noise**: Turn off fans, air conditioners, and other sources of background noise
 - **Use a reflection filter**: If full room treatment isn't possible, a portable vocal shield can help
 
 ### Mental Preparation
+
 - Ensure the vocalist is comfortable and well-hydrated
 - Plan for adequate warm-up time
 - Create a relaxed, supportive atmosphere
@@ -33,11 +35,13 @@ Before you even set up a microphone, you need to prepare your recording space. H
 Selecting the appropriate microphone for the vocalist and style is crucial:
 
 ### Microphone Types
+
 - **Large-diaphragm condensers**: The standard for studio vocals (Neumann U87, AKG C414)
 - **Dynamic microphones**: Great for louder vocalists or live-style recordings (Shure SM7B)
 - **Ribbon microphones**: Offer vintage warmth for the right vocalist (Royer R-121)
 
 ### Microphone Placement
+
 - Start with the microphone 6-8 inches from the vocalist
 - Use a pop filter to reduce plosives
 - Adjust height so the vocalist doesn't have to strain
@@ -55,11 +59,13 @@ A clean signal path ensures the best possible recording quality:
 ## Recording Techniques
 
 ### Multiple Takes
+
 - Record at least 3-5 complete takes
 - Capture additional spot takes for challenging sections
 - Create a comp sheet to track the best performances
 
 ### Direction and Communication
+
 - Give clear, constructive feedback
 - Focus on emotion and delivery, not just technical perfection
 - Take breaks when needed to maintain vocal freshness

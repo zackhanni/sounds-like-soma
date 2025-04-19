@@ -1,35 +1,36 @@
-import Image from "next/image"
-import Link from "next/link"
-import { notFound } from "next/navigation"
-import { getAllPostIds, getPostData } from "@/lib/blog"
-import { Button } from "@/components/ui/button"
-import { CalendarDays, User, ArrowLeft } from "lucide-react"
+import Image from "next/image";
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import { getAllPostIds, getPostData } from "@/lib/blog";
+import { Button } from "@/components/ui/button";
+import { CalendarDays, User, ArrowLeft } from "lucide-react";
 
 export async function generateStaticParams() {
-  const posts = getAllPostIds()
+  const posts = getAllPostIds();
   return posts.map((post) => ({
     id: post.params.id,
-  }))
+  }));
 }
 
 export async function generateMetadata({ params }: { params: { id: string } }) {
   try {
-    const post = await getPostData(params.id)
+    const post = await getPostData(params.id);
     return {
       title: `${post.title} | Sounds Like Soma Blog`,
       description: post.excerpt,
-    }
+    };
   } catch (error) {
     return {
       title: "Blog Post | Sounds Like Soma",
-      description: "Read our latest blog post about music production and recording.",
-    }
+      description:
+        "Read our latest blog post about music production and recording.",
+    };
   }
 }
 
 export default async function BlogPost({ params }: { params: { id: string } }) {
   try {
-    const post = await getPostData(params.id)
+    const post = await getPostData(params.id);
 
     return (
       <div className="bg-[#2E2E2E] text-[#FFFFF0] min-h-screen">
@@ -37,7 +38,10 @@ export default async function BlogPost({ params }: { params: { id: string } }) {
         <section className="relative bg-[#252525] py-16">
           <div className="container mx-auto px-4">
             <Link href="/blog">
-              <Button variant="ghost" className="mb-6 text-purple-400 hover:text-purple-300 hover:bg-purple-900/20">
+              <Button
+                variant="ghost"
+                className="mb-6 text-purple-400 hover:text-purple-300 hover:bg-purple-900/20"
+              >
                 <ArrowLeft className="mr-2 h-4 w-4" /> Back to Blog
               </Button>
             </Link>
@@ -49,7 +53,9 @@ export default async function BlogPost({ params }: { params: { id: string } }) {
                 </span>
               </div>
 
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">{post.title}</h1>
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+                {post.title}
+              </h1>
 
               <div className="flex items-center gap-6 mb-8 text-[#FFFFF0]/70">
                 <div className="flex items-center">
@@ -63,7 +69,11 @@ export default async function BlogPost({ params }: { params: { id: string } }) {
                 <div className="flex items-center">
                   <User className="h-4 w-4 mr-2" />
                   {post.author}
-                  {post.authorRole && <span className="text-[#FFFFF0]/50 ml-1">({post.authorRole})</span>}
+                  {post.authorRole && (
+                    <span className="text-[#FFFFF0]/50 ml-1">
+                      ({post.authorRole})
+                    </span>
+                  )}
                 </div>
               </div>
             </div>
@@ -128,15 +138,17 @@ export default async function BlogPost({ params }: { params: { id: string } }) {
               {/* Related posts would go here */}
               <div className="text-center py-8">
                 <Link href="/blog">
-                  <Button className="bg-purple-600 hover:bg-purple-700">View All Articles</Button>
+                  <Button className="bg-purple-600 hover:bg-purple-700">
+                    View All Articles
+                  </Button>
                 </Link>
               </div>
             </div>
           </div>
         </section>
       </div>
-    )
+    );
   } catch (error) {
-    notFound()
+    notFound();
   }
 }
