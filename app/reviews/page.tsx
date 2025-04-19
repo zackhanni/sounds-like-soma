@@ -1,25 +1,25 @@
-import Image from "next/image"
-import { Star, StarHalf, Quote } from "lucide-react"
-import { Card, CardContent } from "@/components/ui/card"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Button } from "@/components/ui/button"
+import Image from "next/image";
+import { Star, StarHalf, Quote } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Button } from "@/components/ui/button";
 
 export const metadata = {
   title: "Client Reviews | Sounds Like Soma | Philadelphia Recording Studio",
   description:
     "Read reviews and testimonials from our clients about their experiences at Sounds Like Soma recording studio in Philadelphia.",
-}
+};
 
 interface Review {
-  id: string
-  name: string
-  role: string
-  company?: string
-  image: string
-  rating: number
-  text: string
-  date: string
-  service: string
+  id: string;
+  name: string;
+  role: string;
+  company?: string;
+  image: string;
+  rating: number;
+  text: string;
+  date: string;
+  service: string;
 }
 
 export default function ReviewsPage() {
@@ -98,7 +98,7 @@ export default function ReviewsPage() {
       date: "2023-05-30",
       service: "promotion",
     },
-  ]
+  ];
 
   return (
     <div className="bg-[#2E2E2E] text-[#FFFFF0] min-h-screen">
@@ -106,10 +106,12 @@ export default function ReviewsPage() {
       <section className="relative bg-[#252525] py-16 md:py-24">
         <div className="container mx-auto px-4">
           <div className="flex flex-col items-start max-w-3xl">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">Client Reviews</h1>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+              Client Reviews
+            </h1>
             <p className="text-xl text-[#FFFFF0]/80 mb-8">
-              Read what our clients have to say about their experiences at Sounds Like Soma recording studio in
-              Philadelphia.
+              Read what our clients have to say about their experiences at
+              Sounds Like Soma recording studio in Philadelphia.
             </p>
           </div>
         </div>
@@ -120,25 +122,46 @@ export default function ReviewsPage() {
         <div className="container mx-auto px-4">
           <Tabs defaultValue="all" className="w-full">
             <TabsList className="mb-8 bg-[#3A3A3A] border-gray-700">
-              <TabsTrigger value="all" className="data-[state=active]:bg-purple-600">
+              <TabsTrigger
+                value="all"
+                className="data-[state=active]:bg-purple-600"
+              >
                 All Reviews
               </TabsTrigger>
-              <TabsTrigger value="recording" className="data-[state=active]:bg-purple-600">
+              <TabsTrigger
+                value="recording"
+                className="data-[state=active]:bg-purple-600"
+              >
                 Recording
               </TabsTrigger>
-              <TabsTrigger value="editing" className="data-[state=active]:bg-purple-600">
+              <TabsTrigger
+                value="editing"
+                className="data-[state=active]:bg-purple-600"
+              >
                 Editing & Production
               </TabsTrigger>
-              <TabsTrigger value="podcast" className="data-[state=active]:bg-purple-600">
+              <TabsTrigger
+                value="podcast"
+                className="data-[state=active]:bg-purple-600"
+              >
                 Podcast
               </TabsTrigger>
-              <TabsTrigger value="voiceover" className="data-[state=active]:bg-purple-600">
+              <TabsTrigger
+                value="voiceover"
+                className="data-[state=active]:bg-purple-600"
+              >
                 Voice Over
               </TabsTrigger>
-              <TabsTrigger value="rental" className="data-[state=active]:bg-purple-600">
+              <TabsTrigger
+                value="rental"
+                className="data-[state=active]:bg-purple-600"
+              >
                 Space Rental
               </TabsTrigger>
-              <TabsTrigger value="promotion" className="data-[state=active]:bg-purple-600">
+              <TabsTrigger
+                value="promotion"
+                className="data-[state=active]:bg-purple-600"
+              >
                 Promotion
               </TabsTrigger>
             </TabsList>
@@ -151,7 +174,14 @@ export default function ReviewsPage() {
               </div>
             </TabsContent>
 
-            {["recording", "editing", "podcast", "voiceover", "rental", "promotion"].map((service) => (
+            {[
+              "recording",
+              "editing",
+              "podcast",
+              "voiceover",
+              "rental",
+              "promotion",
+            ].map((service) => (
               <TabsContent key={service} value={service} className="mt-0">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                   {reviews
@@ -172,12 +202,19 @@ export default function ReviewsPage() {
           <div className="max-w-4xl mx-auto text-center">
             <Quote className="h-16 w-16 text-purple-400 mx-auto mb-6 opacity-50" />
             <blockquote className="text-2xl md:text-3xl font-light italic mb-8">
-              "Sounds Like Soma isn't just a recording studio, it's a creative partner. Their team's expertise and
-              passion for music elevated our album beyond what we thought possible."
+              &quot;Sounds Like Soma isn&apos;t just a recording studio,
+              it&apos;s a creative partner. Their team&apos;s expertise and
+              passion for music elevated our album beyond what we thought
+              possible.&quot;
             </blockquote>
             <div className="flex items-center justify-center">
               <div className="w-16 h-16 rounded-full overflow-hidden mr-4">
-                <Image src="/placeholder.svg?height=200&width=200" alt="Client" width={64} height={64} />
+                <Image
+                  src="/placeholder.svg?height=200&width=200"
+                  alt="Client"
+                  width={64}
+                  height={64}
+                />
               </div>
               <div className="text-left">
                 <p className="font-bold">Alex Martinez</p>
@@ -191,12 +228,17 @@ export default function ReviewsPage() {
       {/* CTA Section */}
       <section className="py-16 bg-purple-900/20">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">Ready to Experience Sounds Like Soma?</h2>
+          <h2 className="text-3xl font-bold mb-4">
+            Ready to Experience Sounds Like Soma?
+          </h2>
           <p className="text-xl text-[#FFFFF0]/80 max-w-2xl mx-auto mb-8">
-            Join our satisfied clients and create your next project with us. Contact us today to discuss your needs or
-            schedule a studio tour.
+            Join our satisfied clients and create your next project with us.
+            Contact us today to discuss your needs or schedule a studio tour.
           </p>
-          <Button size="lg" className="bg-purple-600 hover:bg-purple-700 text-lg px-8">
+          <Button
+            size="lg"
+            className="bg-purple-600 hover:bg-purple-700 text-lg px-8"
+          >
             Book Now
           </Button>
         </div>
@@ -208,15 +250,18 @@ export default function ReviewsPage() {
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-4">Share Your Experience</h2>
             <p className="text-[#FFFFF0]/80 mb-8">
-              If you've worked with us, we'd love to hear about your experience. Your feedback helps us improve and
-              helps others find the right studio for their needs.
+              If you&apos;ve worked with us, we&apos;d love to hear about your
+              experience. Your feedback helps us improve and helps others find
+              the right studio for their needs.
             </p>
-            <Button className="bg-purple-600 hover:bg-purple-700">Leave a Review</Button>
+            <Button className="bg-purple-600 hover:bg-purple-700">
+              Leave a Review
+            </Button>
           </div>
         </div>
       </section>
     </div>
-  )
+  );
 }
 
 function ReviewCard({ review }: { review: Review }) {
@@ -225,12 +270,19 @@ function ReviewCard({ review }: { review: Review }) {
       <CardContent className="p-6">
         <div className="flex items-start mb-4">
           <div className="w-12 h-12 rounded-full overflow-hidden mr-4 flex-shrink-0">
-            <Image src={review.image || "/placeholder.svg"} alt={review.name} width={48} height={48} />
+            <Image
+              src={review.image || "/placeholder.svg"}
+              alt={review.name}
+              width={48}
+              height={48}
+            />
           </div>
           <div>
             <h3 className="font-bold">{review.name}</h3>
             <p className="text-sm text-purple-400">{review.role}</p>
-            {review.company && <p className="text-xs text-[#FFFFF0]/60">{review.company}</p>}
+            {review.company && (
+              <p className="text-xs text-[#FFFFF0]/60">{review.company}</p>
+            )}
           </div>
         </div>
 
@@ -238,7 +290,9 @@ function ReviewCard({ review }: { review: Review }) {
           {[...Array(Math.floor(review.rating))].map((_, i) => (
             <Star key={i} className="h-4 w-4 text-yellow-500 fill-yellow-500" />
           ))}
-          {review.rating % 1 !== 0 && <StarHalf className="h-4 w-4 text-yellow-500 fill-yellow-500" />}
+          {review.rating % 1 !== 0 && (
+            <StarHalf className="h-4 w-4 text-yellow-500 fill-yellow-500" />
+          )}
         </div>
 
         <p className="text-sm text-[#FFFFF0]/80 mb-4">{review.text}</p>
@@ -252,5 +306,5 @@ function ReviewCard({ review }: { review: Review }) {
         </p>
       </CardContent>
     </Card>
-  )
+  );
 }
