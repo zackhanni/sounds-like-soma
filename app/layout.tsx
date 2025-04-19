@@ -2,6 +2,8 @@ import type React from "react";
 import "@/app/globals.css";
 import { Inter } from "next/font/google";
 import Navigation from "@/components/navigation";
+import { Toaster } from "@/components/ui/toaster";
+
 // import { ThemeProvider } from "@/components/theme-provider"
 
 const inter = Inter({ subsets: ["latin"] });
@@ -29,6 +31,7 @@ export default function RootLayout({
         {/* <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange> */}
         <Navigation />
         {children}
+        <Toaster />
         {/* </ThemeProvider> */}
       </body>
     </html>
