@@ -26,19 +26,19 @@ export default function Home() {
                   <div className="flex items-center gap-2">
                     <Phone className="h-4 w-4 text-purple-400" />
                     <a
-                      href="tel:+12155551234"
+                      href="tel:+12156019509"
                       className="hover:text-purple-400 transition-colors"
                     >
-                      (215) 555-1234
+                      (215) 601-9509
                     </a>
                   </div>
                   <div className="flex items-center gap-2">
                     <Phone className="h-4 w-4 text-purple-400" />
                     <a
-                      href="tel:+12155555678"
+                      href="tel:+18562983095"
                       className="hover:text-purple-400 transition-colors"
                     >
-                      (215) 555-5678
+                      (856) 298-3095
                     </a>
                   </div>
                   <div className="flex items-center gap-2">

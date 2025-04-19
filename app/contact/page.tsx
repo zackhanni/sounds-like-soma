@@ -83,21 +83,27 @@ export default function ContactPage() {
       <section className="py-16 bg-[#2E2E2E]">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-            <Card className="bg-[#3A3A3A] border-gray-700">
+            <Card className="bg-[#3A3A3A] text-[#FFFFF0] border-gray-700">
               <CardContent className="p-6 flex flex-col items-center text-center">
                 <Phone className="h-10 w-10 text-purple-400 mb-4" />
                 <h3 className="text-lg font-bold mb-2">Phone</h3>
                 <p className="text-[#FFFFF0]/80 mb-2">Call us directly</p>
                 <a
-                  href="tel:+12155551234"
+                  href="tel:+12156019509"
                   className="text-purple-400 hover:underline"
                 >
-                  (215) 555-1234
+                  (215) 601-9509
+                </a>
+                <a
+                  href="tel:+18562983095"
+                  className="text-purple-400 hover:underline"
+                >
+                  (856) 298-3095
                 </a>
               </CardContent>
             </Card>
 
-            <Card className="bg-[#3A3A3A] border-gray-700">
+            <Card className="bg-[#3A3A3A] text-[#FFFFF0] border-gray-700">
               <CardContent className="p-6 flex flex-col items-center text-center">
                 <Mail className="h-10 w-10 text-purple-400 mb-4" />
                 <h3 className="text-lg font-bold mb-2">Email</h3>
@@ -111,7 +117,7 @@ export default function ContactPage() {
               </CardContent>
             </Card>
 
-            <Card className="bg-[#3A3A3A] border-gray-700">
+            <Card className="bg-[#3A3A3A] text-[#FFFFF0] border-gray-700">
               <CardContent className="p-6 flex flex-col items-center text-center">
                 <MapPin className="h-10 w-10 text-purple-400 mb-4" />
                 <h3 className="text-lg font-bold mb-2">Location</h3>
@@ -122,7 +128,7 @@ export default function ContactPage() {
               </CardContent>
             </Card>
 
-            <Card className="bg-[#3A3A3A] border-gray-700">
+            <Card className="bg-[#3A3A3A] text-[#FFFFF0] border-gray-700">
               <CardContent className="p-6 flex flex-col items-center text-center">
                 <Clock className="h-10 w-10 text-purple-400 mb-4" />
                 <h3 className="text-lg font-bold mb-2">Hours</h3>
