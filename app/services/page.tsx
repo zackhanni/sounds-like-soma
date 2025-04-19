@@ -90,7 +90,7 @@ export default function ServicesPage() {
             {serviceCategories.map((category) => (
               <Card
                 key={category.id}
-                className="bg-[#3A3A3A] border-gray-700 hover:border-purple-500 transition-all duration-300"
+                className="bg-[#3A3A3A] text-[#FFFFF0] border-gray-700 hover:border-purple-500 transition-all duration-300"
               >
                 <CardHeader>
                   <div className="flex items-center gap-3">
