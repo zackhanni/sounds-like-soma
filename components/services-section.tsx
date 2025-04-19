@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
-import type React from "react"
+import type React from "react";
 
-import { useState } from "react"
-import Link from "next/link"
+import { useState } from "react";
+import Link from "next/link";
 import {
   Mic,
   Sliders,
@@ -25,39 +25,47 @@ import {
   Globe,
   Share2,
   CheckCircle,
-} from "lucide-react"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
+} from "lucide-react";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 
 type SubCategory = {
-  id: string
-  title: string
-  description: string
-  longDescription: string
-  keywords: string[]
-  benefits: string[]
-  icon: React.ReactNode
-  href: string
-}
+  id: string;
+  title: string;
+  description: string;
+  longDescription: string;
+  keywords: string[];
+  benefits: string[];
+  icon: React.ReactNode;
+  href: string;
+};
 
 type MainCategory = {
-  id: string
-  title: string
-  description: string
-  longDescription: string
-  keywords: string[]
-  icon: React.ReactNode
-  subcategories: SubCategory[]
-}
+  id: string;
+  title: string;
+  description: string;
+  longDescription: string;
+  keywords: string[];
+  icon: React.ReactNode;
+  subcategories: SubCategory[];
+};
 
 export default function ServicesSection() {
-  const [selectedCategory, setSelectedCategory] = useState<string | null>(null)
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
 
   const mainCategories: MainCategory[] = [
     {
       id: "recording",
       title: "Recording",
-      description: "Professional audio recording for vocals, bands, podcasts, and more",
+      description:
+        "Professional audio recording for vocals, bands, podcasts, and more",
       longDescription:
         "Our state-of-the-art Philadelphia recording studios offer premium audio capture services with industry-leading equipment and experienced engineers. Whether you're a solo artist, full band, podcaster, or voice actor, our acoustically-treated spaces ensure pristine sound quality for any project.",
       keywords: [
@@ -73,7 +81,8 @@ export default function ServicesSection() {
         {
           id: "vocal-recording",
           title: "Vocal Recording",
-          description: "Professional vocal recording for singers and artists in Philadelphia",
+          description:
+            "Professional vocal recording for singers and artists in Philadelphia",
           longDescription:
             "Our vocal recording services utilize premium microphones and preamps in acoustically-treated spaces to capture the nuance and emotion in your voice. Our experienced engineers know how to get the best performance and sound quality for any vocal style.",
           keywords: [
@@ -95,7 +104,8 @@ export default function ServicesSection() {
         {
           id: "band-recording",
           title: "Band Recording",
-          description: "Full band recording sessions with multiple instruments in our spacious studios",
+          description:
+            "Full band recording sessions with multiple instruments in our spacious studios",
           longDescription:
             "Our Philadelphia recording studios are designed to accommodate full bands with separate tracking rooms and isolation booths. We have the space, equipment, and expertise to capture your band's unique sound with clarity and energy.",
           keywords: [
@@ -117,7 +127,8 @@ export default function ServicesSection() {
         {
           id: "podcast-recording",
           title: "Podcast Recording",
-          description: "Professional podcast recording with multiple microphones and broadcast-quality equipment",
+          description:
+            "Professional podcast recording with multiple microphones and broadcast-quality equipment",
           longDescription:
             "Our podcast studios in Philadelphia are equipped with broadcast-quality microphones, mixers, and acoustic treatment to ensure your podcast sounds professional. We can accommodate multiple hosts and guests with individual microphones and headphone monitoring.",
           keywords: [
@@ -139,7 +150,8 @@ export default function ServicesSection() {
         {
           id: "voiceover-recording",
           title: "Voice Over Recording",
-          description: "Professional voice over recording for commercials, narration, audiobooks, and more",
+          description:
+            "Professional voice over recording for commercials, narration, audiobooks, and more",
           longDescription:
             "Our voice over recording services provide the perfect environment for capturing clear, professional voice overs for commercials, e-learning, audiobooks, and more. Our engineers understand the specific requirements of voice over work and can help you deliver the perfect take.",
           keywords: [
@@ -161,7 +173,8 @@ export default function ServicesSection() {
         {
           id: "audiobook-recording",
           title: "Audiobook Recording",
-          description: "Professional audiobook recording and production that meets ACX standards",
+          description:
+            "Professional audiobook recording and production that meets ACX standards",
           longDescription:
             "Our audiobook recording services meet all industry standards including ACX requirements for Audible distribution. We provide the perfect environment for long-form narration with comfortable recording spaces and engineers who understand the unique requirements of audiobook production.",
           keywords: [
@@ -202,7 +215,8 @@ export default function ServicesSection() {
         {
           id: "mixing",
           title: "Mixing",
-          description: "Professional audio mixing to balance and enhance your tracks for optimal sound",
+          description:
+            "Professional audio mixing to balance and enhance your tracks for optimal sound",
           longDescription:
             "Our mixing engineers blend technical expertise with artistic sensibility to balance levels, enhance tones, and create depth and dimension in your music. We use premium analog and digital tools to achieve a polished, professional sound that translates across all playback systems.",
           keywords: [
@@ -225,7 +239,8 @@ export default function ServicesSection() {
         {
           id: "mastering",
           title: "Mastering",
-          description: "Final polish and preparation of your audio for distribution across all platforms",
+          description:
+            "Final polish and preparation of your audio for distribution across all platforms",
           longDescription:
             "Our mastering services provide the final polish that makes your music sound professional and competitive. We optimize levels, enhance clarity, and ensure your tracks translate well across all playback systems while meeting the technical requirements of all distribution platforms.",
           keywords: [
@@ -248,7 +263,8 @@ export default function ServicesSection() {
         {
           id: "podcast-editing",
           title: "Podcast Editing",
-          description: "Professional podcast editing and post-production for clear, engaging episodes",
+          description:
+            "Professional podcast editing and post-production for clear, engaging episodes",
           longDescription:
             "Our podcast editing services clean up recordings, remove mistakes, balance levels, and add music and effects to create professional, engaging podcast episodes. We handle all the technical aspects so you can focus on creating great content.",
           keywords: [
@@ -271,7 +287,8 @@ export default function ServicesSection() {
         {
           id: "audio-restoration",
           title: "Audio Restoration",
-          description: "Clean up and restore audio from any source to remove noise and enhance quality",
+          description:
+            "Clean up and restore audio from any source to remove noise and enhance quality",
           longDescription:
             "Our audio restoration services can rescue recordings affected by noise, hum, clicks, pops, and other issues. Using advanced digital tools, we can breathe new life into old recordings, interview audio, live recordings, and more.",
           keywords: [
@@ -294,7 +311,8 @@ export default function ServicesSection() {
         {
           id: "beatmaking",
           title: "Beatmaking / Production",
-          description: "Custom beat production for artists and projects with any style or genre",
+          description:
+            "Custom beat production for artists and projects with any style or genre",
           longDescription:
             "Our beatmaking and production services create custom instrumentals tailored to your artistic vision. Whether you need trap, hip-hop, R&B, pop, or electronic beats, our producers can craft the perfect sonic foundation for your project.",
           keywords: [
@@ -319,7 +337,8 @@ export default function ServicesSection() {
     {
       id: "creative",
       title: "Creative Services",
-      description: "Video production, beatmaking, and creative content services",
+      description:
+        "Video production, beatmaking, and creative content services",
       longDescription:
         "Our creative services extend beyond audio to help artists and brands create compelling visual and musical content. From 4K music videos to custom beats and songwriting, we provide end-to-end creative solutions to bring your vision to life.",
       keywords: [
@@ -335,7 +354,8 @@ export default function ServicesSection() {
         {
           id: "video-production",
           title: "4K Video Production",
-          description: "Professional 4K video production for music videos, performances, and promotional content",
+          description:
+            "Professional 4K video production for music videos, performances, and promotional content",
           longDescription:
             "Our 4K video production services capture stunning visuals for music videos, live performances, interviews, and promotional content. With professional cameras, lighting, and editing, we create compelling visual stories that enhance your music and brand.",
           keywords: [
@@ -358,7 +378,8 @@ export default function ServicesSection() {
         {
           id: "beatmaking",
           title: "Beatmaking",
-          description: "Custom beat production for artists across all genres and styles",
+          description:
+            "Custom beat production for artists across all genres and styles",
           longDescription:
             "Our beatmaking services create original, high-quality instrumentals tailored to your artistic vision. Our producers work in all genres including hip-hop, R&B, pop, electronic, and trap, using premium samples and instruments to craft unique sounds.",
           keywords: [
@@ -381,7 +402,8 @@ export default function ServicesSection() {
         {
           id: "instrumental-recreation",
           title: "Instrumental Recreation",
-          description: "Professional recreation of instrumentals and backing tracks for performances and recordings",
+          description:
+            "Professional recreation of instrumentals and backing tracks for performances and recordings",
           longDescription:
             "Our instrumental recreation services can reproduce existing songs, create backing tracks for performances, or develop custom karaoke tracks. Our musicians and producers can match the sound and feel of original recordings while adapting them to your specific needs.",
           keywords: [
@@ -404,7 +426,8 @@ export default function ServicesSection() {
         {
           id: "songwriting",
           title: "Songwriting / Toplining",
-          description: "Professional songwriting and toplining services to help complete your musical vision",
+          description:
+            "Professional songwriting and toplining services to help complete your musical vision",
           longDescription:
             "Our songwriting and toplining services help artists develop melodies, lyrics, and song structures that connect with audiences. Whether you need a complete song or help finishing an existing idea, our experienced songwriters can bring your vision to life.",
           keywords: [
@@ -429,7 +452,8 @@ export default function ServicesSection() {
     {
       id: "rental",
       title: "Space Rental",
-      description: "Rentable studio space for recording, rehearsals, and podcasting",
+      description:
+        "Rentable studio space for recording, rehearsals, and podcasting",
       longDescription:
         "Our Philadelphia studio spaces are available for hourly and daily rental, providing professional environments for recording, rehearsals, and content creation. With premium equipment, acoustic treatment, and flexible booking options, we offer the perfect space for your creative projects.",
       keywords: [
@@ -445,7 +469,8 @@ export default function ServicesSection() {
         {
           id: "studio-rental",
           title: "Rentable Music Studio",
-          description: "Professional recording studio space available for hourly and daily rental",
+          description:
+            "Professional recording studio space available for hourly and daily rental",
           longDescription:
             "Our rentable music studios in Philadelphia provide access to professional recording environments without the long-term commitment. With premium equipment, acoustic treatment, and optional engineer assistance, our spaces are perfect for independent artists and producers.",
           keywords: [
@@ -467,7 +492,8 @@ export default function ServicesSection() {
         {
           id: "rehearsal-space",
           title: "Band Rehearsal Space",
-          description: "Spacious rehearsal rooms for bands and musical groups with equipment available",
+          description:
+            "Spacious rehearsal rooms for bands and musical groups with equipment available",
           longDescription:
             "Our band rehearsal spaces in Philadelphia provide the perfect environment for practice and preparation. With soundproofed rooms, PA systems, backline equipment, and 24/7 availability, we make it easy for bands to focus on their music.",
           keywords: [
@@ -490,7 +516,8 @@ export default function ServicesSection() {
         {
           id: "podcast-studio",
           title: "Podcast Studio Rental",
-          description: "Professional podcast studio available for hourly rental with all equipment included",
+          description:
+            "Professional podcast studio available for hourly rental with all equipment included",
           longDescription:
             "Our podcast studio rentals in Philadelphia provide everything you need to record professional-quality episodes. With broadcast microphones, mixers, acoustic treatment, and comfortable seating for hosts and guests, you can focus on content while we handle the technical setup.",
           keywords: [
@@ -515,7 +542,8 @@ export default function ServicesSection() {
     {
       id: "promotion",
       title: "Artist Promotion",
-      description: "Website design, EPK creation, and artist promotion services",
+      description:
+        "Website design, EPK creation, and artist promotion services",
       longDescription:
         "Our artist promotion services help musicians and creators build their brand and reach new audiences. From professional websites and EPKs to social media content and branding consultation, we provide the tools and expertise to elevate your presence in the industry.",
       keywords: [
@@ -531,7 +559,8 @@ export default function ServicesSection() {
         {
           id: "website-epk",
           title: "Website Design / EPK Creation",
-          description: "Custom websites and electronic press kits for artists and musicians",
+          description:
+            "Custom websites and electronic press kits for artists and musicians",
           longDescription:
             "Our website design and EPK creation services build professional online presences for artists and musicians. With mobile-responsive designs, music players, tour calendars, and press materials, we create compelling digital platforms that showcase your music and brand to fans, venues, and industry professionals.",
           keywords: [
@@ -555,7 +584,8 @@ export default function ServicesSection() {
         {
           id: "social-media",
           title: "Social Media Content Packages",
-          description: "Professional social media content creation and management for artists",
+          description:
+            "Professional social media content creation and management for artists",
           longDescription:
             "Our social media content packages help artists maintain a consistent, engaging presence across platforms. From professional photos and graphics to scheduled posts and engagement strategies, we help you connect with fans and grow your following.",
           keywords: [
@@ -579,7 +609,8 @@ export default function ServicesSection() {
         {
           id: "branding",
           title: "Branding Consultation",
-          description: "Professional branding consultation for artists and musicians to develop a unique identity",
+          description:
+            "Professional branding consultation for artists and musicians to develop a unique identity",
           longDescription:
             "Our branding consultation services help artists develop a cohesive, memorable identity that resonates with audiences. From logo design and color schemes to messaging and visual style, we create comprehensive brand strategies that help you stand out in a crowded industry.",
           keywords: [
@@ -602,7 +633,7 @@ export default function ServicesSection() {
         },
       ],
     },
-  ]
+  ];
 
   return (
     <section className="py-16 bg-[#252525]">
@@ -610,8 +641,9 @@ export default function ServicesSection() {
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Services</h2>
           <p className="text-xl text-[#FFFFF0]/80 max-w-3xl mx-auto">
-            Philadelphia's premier recording studio offering professional audio, video, and creative services for
-            artists, bands, podcasters, and content creators.
+            Philadelphia&apos;s premier recording studio offering professional
+            audio, video, and creative services for artists, bands, podcasters,
+            and content creators.
           </p>
         </div>
 
@@ -630,16 +662,20 @@ export default function ServicesSection() {
                       {category.icon}
                       <CardTitle>{category.title}</CardTitle>
                     </div>
-                    <CardDescription className="text-[#FFFFF0]/70">{category.description}</CardDescription>
+                    <CardDescription className="text-[#FFFFF0]/70">
+                      {category.description}
+                    </CardDescription>
                   </CardHeader>
                   <CardContent>
                     <ul className="space-y-2">
-                      {category.subcategories.slice(0, 3).map((subcategory, index) => (
-                        <li key={index} className="flex items-start gap-2">
-                          <ArrowRight className="h-4 w-4 text-purple-400 mt-1 flex-shrink-0" />
-                          <span className="text-sm">{subcategory.title}</span>
-                        </li>
-                      ))}
+                      {category.subcategories
+                        .slice(0, 3)
+                        .map((subcategory, index) => (
+                          <li key={index} className="flex items-start gap-2">
+                            <ArrowRight className="h-4 w-4 text-purple-400 mt-1 flex-shrink-0" />
+                            <span className="text-sm">{subcategory.title}</span>
+                          </li>
+                        ))}
                       {category.subcategories.length > 3 && (
                         <li className="flex items-start gap-2">
                           <ArrowRight className="h-4 w-4 text-purple-400 mt-1 flex-shrink-0" />
@@ -650,7 +686,8 @@ export default function ServicesSection() {
                   </CardContent>
                   <CardFooter>
                     <Button className="w-full bg-purple-600 hover:bg-purple-700">
-                      Explore {category.title} <ChevronRight className="ml-2 h-4 w-4" />
+                      Explore {category.title}{" "}
+                      <ChevronRight className="ml-2 h-4 w-4" />
                     </Button>
                   </CardFooter>
                 </Card>
@@ -660,29 +697,38 @@ export default function ServicesSection() {
             {/* SEO-rich content section */}
             <div className="mt-16 text-[#FFFFF0]/80 space-y-8">
               <div>
-                <h3 className="text-2xl font-bold mb-4">Philadelphia's Premier Recording Studio Services</h3>
+                <h3 className="text-2xl font-bold mb-4">
+                  Philadelphia&apos;s Premier Recording Studio Services
+                </h3>
                 <p className="mb-4">
-                  At Sounds Like Soma, we provide comprehensive audio and music production services in the heart of
-                  Philadelphia. Our state-of-the-art recording studios are equipped with the latest technology and
-                  staffed by experienced engineers who are passionate about helping artists and content creators bring
+                  At Sounds Like Soma, we provide comprehensive audio and music
+                  production services in the heart of Philadelphia. Our
+                  state-of-the-art recording studios are equipped with the
+                  latest technology and staffed by experienced engineers who are
+                  passionate about helping artists and content creators bring
                   their vision to life.
                 </p>
                 <p>
-                  Whether you're recording vocals for your next hit single, capturing your band's live energy, producing
-                  a podcast, or creating content for your brand, our Philadelphia recording studios offer the perfect
-                  environment and expertise to achieve professional results.
+                  Whether you&apos;re recording vocals for your next hit single,
+                  capturing your band&apos;s live energy, producing a podcast,
+                  or creating content for your brand, our Philadelphia recording
+                  studios offer the perfect environment and expertise to achieve
+                  professional results.
                 </p>
               </div>
 
               <div>
-                <h3 className="text-2xl font-bold mb-4">Why Choose Sounds Like Soma?</h3>
+                <h3 className="text-2xl font-bold mb-4">
+                  Why Choose Sounds Like Soma?
+                </h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="flex items-start gap-2">
                     <CheckCircle className="h-5 w-5 text-purple-400 mt-1 flex-shrink-0" />
                     <div>
                       <h4 className="font-semibold">Professional Equipment</h4>
                       <p className="text-sm">
-                        Industry-standard microphones, preamps, and processing gear for exceptional sound quality
+                        Industry-standard microphones, preamps, and processing
+                        gear for exceptional sound quality
                       </p>
                     </div>
                   </div>
@@ -691,15 +737,21 @@ export default function ServicesSection() {
                     <div>
                       <h4 className="font-semibold">Experienced Engineers</h4>
                       <p className="text-sm">
-                        Skilled professionals who understand how to capture your sound and enhance your vision
+                        Skilled professionals who understand how to capture your
+                        sound and enhance your vision
                       </p>
                     </div>
                   </div>
                   <div className="flex items-start gap-2">
                     <CheckCircle className="h-5 w-5 text-purple-400 mt-1 flex-shrink-0" />
                     <div>
-                      <h4 className="font-semibold">Acoustically-Treated Spaces</h4>
-                      <p className="text-sm">Purpose-built rooms designed for optimal sound capture and monitoring</p>
+                      <h4 className="font-semibold">
+                        Acoustically-Treated Spaces
+                      </h4>
+                      <p className="text-sm">
+                        Purpose-built rooms designed for optimal sound capture
+                        and monitoring
+                      </p>
                     </div>
                   </div>
                   <div className="flex items-start gap-2">
@@ -707,7 +759,8 @@ export default function ServicesSection() {
                     <div>
                       <h4 className="font-semibold">Comprehensive Services</h4>
                       <p className="text-sm">
-                        End-to-end solutions from recording and mixing to promotion and distribution
+                        End-to-end solutions from recording and mixing to
+                        promotion and distribution
                       </p>
                     </div>
                   </div>
@@ -731,7 +784,10 @@ export default function ServicesSection() {
                 {mainCategories.find((c) => c.id === selectedCategory)?.title}
               </h3>
               <p className="text-[#FFFFF0]/80 mb-6">
-                {mainCategories.find((c) => c.id === selectedCategory)?.longDescription}
+                {
+                  mainCategories.find((c) => c.id === selectedCategory)
+                    ?.longDescription
+                }
               </p>
             </div>
 
@@ -748,18 +804,29 @@ export default function ServicesSection() {
                         {subcategory.icon}
                         <CardTitle>{subcategory.title}</CardTitle>
                       </div>
-                      <CardDescription className="text-[#FFFFF0]/70">{subcategory.description}</CardDescription>
+                      <CardDescription className="text-[#FFFFF0]/70">
+                        {subcategory.description}
+                      </CardDescription>
                     </CardHeader>
                     <CardContent>
                       <div className="space-y-4">
-                        <p className="text-sm text-[#FFFFF0]/80">{subcategory.longDescription}</p>
+                        <p className="text-sm text-[#FFFFF0]/80">
+                          {subcategory.longDescription}
+                        </p>
                         <div>
-                          <h4 className="text-sm font-semibold mb-2">Key Benefits:</h4>
+                          <h4 className="text-sm font-semibold mb-2">
+                            Key Benefits:
+                          </h4>
                           <ul className="space-y-1">
                             {subcategory.benefits.map((benefit, index) => (
-                              <li key={index} className="flex items-start gap-2">
+                              <li
+                                key={index}
+                                className="flex items-start gap-2"
+                              >
                                 <CheckCircle className="h-4 w-4 text-purple-400 mt-0.5 flex-shrink-0" />
-                                <span className="text-xs text-[#FFFFF0]/80">{benefit}</span>
+                                <span className="text-xs text-[#FFFFF0]/80">
+                                  {benefit}
+                                </span>
                               </li>
                             ))}
                           </ul>
@@ -768,7 +835,9 @@ export default function ServicesSection() {
                     </CardContent>
                     <CardFooter>
                       <Link href={subcategory.href} className="w-full">
-                        <Button className="w-full bg-purple-600 hover:bg-purple-700">Learn More</Button>
+                        <Button className="w-full bg-purple-600 hover:bg-purple-700">
+                          Learn More
+                        </Button>
                       </Link>
                     </CardFooter>
                   </Card>
@@ -778,37 +847,55 @@ export default function ServicesSection() {
             {/* SEO-rich content for subcategory */}
             <div className="mt-16 text-[#FFFFF0]/80">
               <h3 className="text-2xl font-bold mb-4">
-                Professional {mainCategories.find((c) => c.id === selectedCategory)?.title} Services in Philadelphia
+                Professional{" "}
+                {mainCategories.find((c) => c.id === selectedCategory)?.title}{" "}
+                Services in Philadelphia
               </h3>
               <p className="mb-4">
-                Our {mainCategories.find((c) => c.id === selectedCategory)?.title.toLowerCase()} services provide
-                Philadelphia artists, creators, and businesses with professional solutions tailored to their specific
-                needs. With state-of-the-art equipment, experienced professionals, and a client-focused approach, we
-                ensure exceptional results for every project.
+                Our{" "}
+                {mainCategories
+                  .find((c) => c.id === selectedCategory)
+                  ?.title.toLowerCase()}{" "}
+                services provide Philadelphia artists, creators, and businesses
+                with professional solutions tailored to their specific needs.
+                With state-of-the-art equipment, experienced professionals, and
+                a client-focused approach, we ensure exceptional results for
+                every project.
               </p>
               <p>
-                Located in the heart of Philadelphia's vibrant music scene, Sounds Like Soma offers convenient access to
-                premium
-                {mainCategories.find((c) => c.id === selectedCategory)?.title.toLowerCase()} services without the high
-                costs typically associated with professional studios. We work with clients of all levels, from beginners
-                to established professionals, providing the same attention to detail and quality for every project.
+                Located in the heart of Philadelphia&apos;s vibrant music scene,
+                Sounds Like Soma offers convenient access to premium
+                {mainCategories
+                  .find((c) => c.id === selectedCategory)
+                  ?.title.toLowerCase()}{" "}
+                services without the high costs typically associated with
+                professional studios. We work with clients of all levels, from
+                beginners to established professionals, providing the same
+                attention to detail and quality for every project.
               </p>
 
               <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <h4 className="text-xl font-semibold mb-3">Our Approach</h4>
                   <p className="text-sm">
-                    We take a collaborative approach to every project, working closely with you to understand your
-                    vision and goals. Our team combines technical expertise with creative insight to deliver results
-                    that exceed expectations while staying true to your artistic direction.
+                    We take a collaborative approach to every project, working
+                    closely with you to understand your vision and goals. Our
+                    team combines technical expertise with creative insight to
+                    deliver results that exceed expectations while staying true
+                    to your artistic direction.
                   </p>
                 </div>
                 <div>
-                  <h4 className="text-xl font-semibold mb-3">Equipment & Facilities</h4>
+                  <h4 className="text-xl font-semibold mb-3">
+                    Equipment & Facilities
+                  </h4>
                   <p className="text-sm">
-                    Our Philadelphia studios feature carefully selected equipment from industry-leading brands,
-                    acoustically-designed spaces, and comfortable environments that inspire creativity. We continuously
-                    update our technology to ensure we offer the best possible tools for your project.
+                    Our Philadelphia studios feature carefully selected
+                    equipment from industry-leading brands,
+                    acoustically-designed spaces, and comfortable environments
+                    that inspire creativity. We continuously update our
+                    technology to ensure we offer the best possible tools for
+                    your project.
                   </p>
                 </div>
               </div>
@@ -817,5 +904,5 @@ export default function ServicesSection() {
         )}
       </div>
     </section>
-  )
+  );
 }

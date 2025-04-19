@@ -19,7 +19,7 @@ export default function Home() {
               Music Mixing
             </p>
 
-            <Card className="p-6 bg-[#3A3A3A] border-purple-500 border shadow-lg">
+            <Card className="p-6 bg-[#3A3A3A] border-purple-500 border shadow-lg text-[#FFFFF0]">
               <div className="space-y-4">
                 <h3 className="text-xl font-semibold">Contact Us</h3>
                 <div className="space-y-2">
@@ -44,10 +44,10 @@ export default function Home() {
                   <div className="flex items-center gap-2">
                     <Mail className="h-4 w-4 text-purple-400" />
                     <a
-                      href="mailto:info@soundslikesoma.com"
+                      href="mailto:soundslikesoma@gmail.com"
                       className="hover:text-purple-400 transition-colors"
                     >
-                      info@soundslikesoma.com
+                      soundslikesoma@gmail.com
                     </a>
                   </div>
                 </div>
@@ -60,7 +60,7 @@ export default function Home() {
 
           <div className="relative h-[300px] md:h-[500px] lg:h-[600px] rounded-lg overflow-hidden">
             <Image
-              src="/placeholder.svg?height=600&width=800"
+              src="/music-studios-philadelphia.webp"
               alt="Recording studio"
               fill
               className="object-cover"
