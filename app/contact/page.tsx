@@ -109,10 +109,10 @@ export default function ContactPage() {
                 <h3 className="text-lg font-bold mb-2">Email</h3>
                 <p className="text-[#FFFFF0]/80 mb-2">Send us a message</p>
                 <a
-                  href="mailto:info@soundslikesoma.com"
+                  href="mailto:soundslikesoma@gmail.com"
                   className="text-purple-400 hover:underline"
                 >
-                  info@soundslikesoma.com
+                  soundslikesoma@gmail.com
                 </a>
               </CardContent>
             </Card>
@@ -123,7 +123,7 @@ export default function ContactPage() {
                 <h3 className="text-lg font-bold mb-2">Location</h3>
                 <p className="text-[#FFFFF0]/80 mb-2">Visit our studio</p>
                 <address className="not-italic text-purple-400">
-                  123 Music Ave, Philadelphia, PA 19107
+                  1554 S Lambert St, Philadelphia, PA 19146
                 </address>
               </CardContent>
             </Card>
@@ -133,8 +133,8 @@ export default function ContactPage() {
                 <Clock className="h-10 w-10 text-purple-400 mb-4" />
                 <h3 className="text-lg font-bold mb-2">Hours</h3>
                 <p className="text-[#FFFFF0]/80 mb-2">When we&apos;re open</p>
-                <p className="text-purple-400">Mon-Fri: 10am - 10pm</p>
-                <p className="text-purple-400">Sat-Sun: 12pm - 8pm</p>
+                <p className="text-purple-400">Mon-Fri: 10am - 12am</p>
+                <p className="text-purple-400">Sat-Sun: 12pm - 2am</p>
               </CardContent>
             </Card>
           </div>
